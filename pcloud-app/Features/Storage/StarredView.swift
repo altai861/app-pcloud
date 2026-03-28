@@ -4,6 +4,7 @@ struct StarredView: View {
     @ObservedObject var viewModel: StarredViewModel
     let onMenuTap: () -> Void
     let onOpenFolder: (StorageEntry) -> Void
+    let onEntryUpdated: (StorageEntry) -> Void
 
     @EnvironmentObject private var sessionStore: SessionStore
     @EnvironmentObject private var settingsStore: AppSettingsStore
@@ -58,15 +59,20 @@ struct StarredView: View {
                 ProfileSheetView()
             }
             .sheet(item: $selectedFileEntry) { entry in
-                StorageFilePlaceholderSheet(entry: entry) { starred in
-                    let updatedEntry = try await viewModel.setFileStarred(
-                        entry,
-                        starred: starred,
-                        using: sessionStore
-                    )
-                    selectedFileEntry = updatedEntry.isStarred ? updatedEntry : nil
-                    return updatedEntry
-                }
+                let selectedEntry = entry
+                StorageFilePlaceholderSheet(
+                    entry: entry,
+                    onToggleStar: { starred in
+                        let updatedEntry = try await viewModel.setEntryStarred(
+                            selectedEntry,
+                            starred: starred,
+                            using: sessionStore
+                        )
+                        onEntryUpdated(updatedEntry)
+                        selectedFileEntry = updatedEntry.isStarred ? updatedEntry : nil
+                        return updatedEntry.isStarred
+                    }
+                )
             }
         }
     }

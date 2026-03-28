@@ -82,15 +82,19 @@ struct StorageHomeView: View {
                 )
             }
             .sheet(item: $selectedFileEntry) { entry in
-                StorageFilePlaceholderSheet(entry: entry) { starred in
-                    let updatedEntry = try await viewModel.setFileStarred(
-                        path: entry.path,
-                        starred: starred,
-                        using: sessionStore
-                    )
-                    selectedFileEntry = updatedEntry
-                    return updatedEntry
-                }
+                let entryPath = entry.path
+                StorageFilePlaceholderSheet(
+                    entry: entry,
+                    onToggleStar: { starred in
+                        let updatedEntry = try await viewModel.setEntryStarred(
+                            path: entryPath,
+                            entryType: "file",
+                            starred: starred,
+                            using: sessionStore
+                        )
+                        return updatedEntry.isStarred
+                    }
+                )
             }
         }
     }

@@ -70,38 +70,6 @@ final class StarredViewModel: ObservableObject {
         }
     }
 
-    @discardableResult
-    func setFileStarred(
-        _ entry: StorageEntry,
-        starred: Bool,
-        using sessionStore: SessionStore
-    ) async throws -> StorageEntry {
-        isMutating = true
-        errorMessage = nil
-
-        defer { isMutating = false }
-
-        do {
-            let updatedEntry = try await sessionStore.makeStorageAPI().setStarred(
-                path: entry.path,
-                entryType: "file",
-                starred: starred
-            )
-            applyUpdatedEntry(updatedEntry)
-            return updatedEntry
-        } catch let apiError as APIClientError {
-            if apiError.isUnauthorized {
-                sessionStore.clearSessionLocally()
-            }
-
-            errorMessage = apiError.localizedDescription
-            throw apiError
-        } catch {
-            errorMessage = error.localizedDescription
-            throw error
-        }
-    }
-
     private func applyUpdatedEntry(_ updatedEntry: StorageEntry) {
         if updatedEntry.isStarred {
             if let index = entries.firstIndex(where: { $0.id == updatedEntry.id }) {

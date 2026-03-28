@@ -123,6 +123,10 @@ final class StorageHomeViewModel: ObservableObject {
         }
     }
 
+    func syncEntryFromExternalUpdate(_ updatedEntry: StorageEntry) {
+        applyUpdatedStarredEntry(updatedEntry)
+    }
+
     @discardableResult
     func setEntryStarred(
         path: String,
@@ -137,7 +141,11 @@ final class StorageHomeViewModel: ObservableObject {
 
         do {
             let api = try sessionStore.makeStorageAPI()
-            let updatedEntry = try await api.setStarred(path: path, entryType: entryType, starred: starred)
+            let updatedEntry = try await api.setStarred(
+                path: path,
+                entryType: entryType,
+                starred: starred
+            )
             applyUpdatedStarredEntry(updatedEntry)
             return updatedEntry
         } catch let apiError as APIClientError {
@@ -151,20 +159,6 @@ final class StorageHomeViewModel: ObservableObject {
             errorMessage = error.localizedDescription
             throw error
         }
-    }
-
-    @discardableResult
-    func setFileStarred(
-        path: String,
-        starred: Bool,
-        using sessionStore: SessionStore
-    ) async throws -> StorageEntry {
-        try await setEntryStarred(
-            path: path,
-            entryType: "file",
-            starred: starred,
-            using: sessionStore
-        )
     }
 
     private func load(path: String, starredHint: Bool? = nil, using sessionStore: SessionStore) async {

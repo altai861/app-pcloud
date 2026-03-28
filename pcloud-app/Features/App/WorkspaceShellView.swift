@@ -54,12 +54,15 @@ struct WorkspaceShellView: View {
         }
         .animation(.spring(response: 0.32, dampingFraction: 0.86), value: isSidebarPresented)
         .onChange(of: selectedTab) { _, newTab in
-            guard newTab == .starred else {
-                return
-            }
-
             Task {
-                await starredViewModel.refresh(using: sessionStore)
+                switch newTab {
+                case .storage:
+                    await storageViewModel.refresh(using: sessionStore)
+                case .starred:
+                    await starredViewModel.refresh(using: sessionStore)
+                default:
+                    break
+                }
             }
         }
         .onChange(of: selectedPhotoItems) { _, items in
@@ -132,7 +135,10 @@ struct WorkspaceShellView: View {
             StarredView(
                 viewModel: starredViewModel,
                 onMenuTap: toggleSidebar,
-                onOpenFolder: openStarredFolder
+                onOpenFolder: openStarredFolder,
+                onEntryUpdated: { updatedEntry in
+                    storageViewModel.syncEntryFromExternalUpdate(updatedEntry)
+                }
             )
         case .storage:
             StorageHomeView(

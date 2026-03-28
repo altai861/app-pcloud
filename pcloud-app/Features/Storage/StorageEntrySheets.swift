@@ -5,20 +5,20 @@ struct StorageFilePlaceholderSheet: View {
     @EnvironmentObject private var settingsStore: AppSettingsStore
 
     let entry: StorageEntry
-    var onToggleStar: ((Bool) async throws -> StorageEntry)? = nil
+    var onToggleStar: (@MainActor (Bool) async throws -> Bool)? = nil
 
-    @State private var displayEntry: StorageEntry
+    @State private var isStarred: Bool
     @State private var showingFileInfoSheet = false
     @State private var isUpdatingStar = false
     @State private var starErrorMessage: String?
 
     init(
         entry: StorageEntry,
-        onToggleStar: ((Bool) async throws -> StorageEntry)? = nil
+        onToggleStar: (@MainActor (Bool) async throws -> Bool)? = nil
     ) {
         self.entry = entry
         self.onToggleStar = onToggleStar
-        _displayEntry = State(initialValue: entry)
+        _isStarred = State(initialValue: entry.isStarred)
     }
 
     var body: some View {
@@ -60,16 +60,16 @@ struct StorageFilePlaceholderSheet: View {
                             )
 
                         VStack(alignment: .leading, spacing: 10) {
-                            storageMetadataLine(title: strings.pathLabel, value: displayEntry.path)
+                            storageMetadataLine(title: strings.pathLabel, value: entry.path)
 
-                            if let sizeBytes = displayEntry.sizeBytes {
+                            if let sizeBytes = entry.sizeBytes {
                                 storageMetadataLine(
                                     title: strings.used,
                                     value: ByteCountFormatter.string(fromByteCount: sizeBytes, countStyle: .file)
                                 )
                             }
 
-                            storageMetadataLine(title: strings.type, value: displayEntry.entryType.capitalized)
+                            storageMetadataLine(title: strings.type, value: entry.entryType.capitalized)
                         }
                         .appCard(padding: 18)
                     }
@@ -81,11 +81,8 @@ struct StorageFilePlaceholderSheet: View {
                 .padding(.bottom, 28)
             }
             .toolbar(.hidden, for: .navigationBar)
-            .task(id: entry.id) {
-                displayEntry = entry
-            }
             .sheet(isPresented: $showingFileInfoSheet) {
-                StorageFileInfoSheet(entry: displayEntry)
+                StorageFileInfoSheet(entry: entry, isStarred: isStarred)
             }
             .alert(
                 strings.starred,
@@ -109,11 +106,14 @@ struct StorageFilePlaceholderSheet: View {
         }
         .presentationDetents([.large])
         .presentationDragIndicator(.visible)
+        .onChange(of: entry.isStarred) { _, newValue in
+            isStarred = newValue
+        }
     }
 
     private var fileHeader: some View {
         HStack(spacing: 12) {
-            Text(displayEntry.name)
+            Text(entry.name)
                 .font(.headline.weight(.semibold))
                 .foregroundStyle(AppPalette.textPrimary)
                 .lineLimit(1)
@@ -122,12 +122,9 @@ struct StorageFilePlaceholderSheet: View {
 
             if onToggleStar != nil {
                 headerActionButton(
-                    systemImage: displayEntry.isStarred ? "star.fill" : "star",
-                    foregroundColor: displayEntry.isStarred ? .yellow : AppPalette.textPrimary,
-                    action: {
-                        print("star button pressed")
-                        toggleStar()
-                    }
+                    systemImage: isStarred ? "star.fill" : "star",
+                    foregroundColor: isStarred ? .yellow : AppPalette.textPrimary,
+                    action: toggleStar
                 )
                 .disabled(isUpdatingStar)
             }
@@ -171,7 +168,7 @@ struct StorageFilePlaceholderSheet: View {
     }
 
     private var fileSystemImage: String {
-        let name = displayEntry.name.lowercased()
+        let name = entry.name.lowercased()
 
         if name.hasSuffix(".pdf") {
             return "doc.richtext.fill"
@@ -184,32 +181,27 @@ struct StorageFilePlaceholderSheet: View {
         return "doc.text.fill"
     }
 
+    @MainActor
     private func toggleStar() {
+        guard !isUpdatingStar else {
+            return
+        }
 
-        print("star tapped", displayEntry.path, displayEntry.isStarred)
         guard let onToggleStar else {
             return
         }
 
-        let targetState = !displayEntry.isStarred
-        print("target state:", targetState)
+        let targetState = !isStarred
+        isUpdatingStar = true
 
-        Task {
+        Task { @MainActor in
             do {
-                let updatedEntry = try await onToggleStar(targetState)
-                print("server returned:", updatedEntry.isStarred)
-
-                await MainActor.run {
-                    displayEntry = updatedEntry
-                    print("after assign:", displayEntry.isStarred)
-                    isUpdatingStar = false
-                }
+                let updatedIsStarred = try await onToggleStar(targetState)
+                isStarred = updatedIsStarred
+                isUpdatingStar = false
             } catch {
-                await MainActor.run {
-                    print("toggle error:", error.localizedDescription)
-                    starErrorMessage = error.localizedDescription
-                    isUpdatingStar = false
-                }
+                starErrorMessage = error.localizedDescription
+                isUpdatingStar = false
             }
         }
     }
@@ -220,6 +212,7 @@ private struct StorageFileInfoSheet: View {
     @EnvironmentObject private var settingsStore: AppSettingsStore
 
     let entry: StorageEntry
+    let isStarred: Bool
 
     var body: some View {
         let strings = settingsStore.strings
@@ -249,7 +242,7 @@ private struct StorageFileInfoSheet: View {
                             storageMetadataLine(title: strings.createdBy, value: entry.createdByUsername)
                             storageMetadataLine(
                                 title: strings.starredStatus,
-                                value: entry.isStarred ? strings.starredStatus : strings.notStarred
+                                value: isStarred ? strings.starredStatus : strings.notStarred
                             )
 
                             if let sizeBytes = entry.sizeBytes {
