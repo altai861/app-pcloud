@@ -1,0 +1,16 @@
+{
+  "source": "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageHomeView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 456
+        }
+      }
+    ]
+  },
+  "version": 1
+}

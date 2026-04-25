@@ -1,0 +1,16 @@
+{
+  "source": "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageMoveSheet.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@: %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 58
+        }
+      }
+    ]
+  },
+  "version": 1
+}

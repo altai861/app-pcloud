@@ -53,6 +53,20 @@ struct APIClient {
         )
     }
 
+    func post<Response: Decodable>(
+        path: String,
+        bearerToken: String? = nil,
+        queryItems: [URLQueryItem]
+    ) async throws -> Response {
+        try await performRequest(
+            path: path,
+            method: .post,
+            bearerToken: bearerToken,
+            queryItems: queryItems,
+            bodyData: nil
+        )
+    }
+
     func postMultipart<Response: Decodable>(
         path: String,
         bearerToken: String? = nil,
@@ -95,6 +109,45 @@ struct APIClient {
             bearerToken: bearerToken,
             queryItems: queryItems,
             bodyData: nil
+        )
+    }
+
+    func download(
+        path: String,
+        bearerToken: String? = nil,
+        queryItems: [URLQueryItem] = []
+    ) async throws -> DownloadedFileResponse {
+        let request = try makeRequest(
+            path: path,
+            method: .get,
+            bearerToken: bearerToken,
+            queryItems: queryItems,
+            bodyData: nil,
+            contentType: nil,
+            acceptType: "*/*"
+        )
+
+        let temporaryFileURL: URL
+        let response: URLResponse
+
+        do {
+            (temporaryFileURL, response) = try await urlSession.download(for: request)
+        } catch {
+            throw APIClientError.transport(error)
+        }
+
+        guard let httpResponse = response as? HTTPURLResponse else {
+            throw APIClientError.invalidResponse
+        }
+
+        guard (200 ..< 300).contains(httpResponse.statusCode) else {
+            let data = (try? Data(contentsOf: temporaryFileURL)) ?? Data()
+            throw mapServerError(data: data, statusCode: httpResponse.statusCode)
+        }
+
+        return DownloadedFileResponse(
+            temporaryFileURL: temporaryFileURL,
+            response: httpResponse
         )
     }
 
@@ -145,13 +198,14 @@ struct APIClient {
         bearerToken: String?,
         queryItems: [URLQueryItem],
         bodyData: Data?,
-        contentType: String?
+        contentType: String?,
+        acceptType: String = "application/json"
     ) throws -> URLRequest {
         let url = try makeURL(path: path, queryItems: queryItems)
         var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.cachePolicy = .reloadIgnoringLocalCacheData
-        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue(acceptType, forHTTPHeaderField: "Accept")
         request.setValue("no-cache", forHTTPHeaderField: "Cache-Control")
         request.setValue("no-cache", forHTTPHeaderField: "Pragma")
 
@@ -218,6 +272,11 @@ struct APIClient {
 
         return .server(message: "Request failed with status code \(statusCode).", statusCode: statusCode)
     }
+}
+
+struct DownloadedFileResponse {
+    let temporaryFileURL: URL
+    let response: HTTPURLResponse
 }
 
 struct MultipartFormPart {

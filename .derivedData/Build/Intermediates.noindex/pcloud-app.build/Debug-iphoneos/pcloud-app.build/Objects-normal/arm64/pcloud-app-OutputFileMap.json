@@ -1,0 +1,489 @@
+{
+  "" : {
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud-app-primary.dia",
+    "emit-module-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud-app-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud-app-primary-emit-module.dia",
+    "pch" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud-app-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud-app-primary.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/ContentView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ContentView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Configuration/AppConfig.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppConfig~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Configuration/AppPreferences.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppPreferences~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Configuration/AppSettingsStore.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppSettingsStore~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Networking/APIClient.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIClient~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Networking/APIErrorResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/APIErrorResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Networking/HTTPMethod.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HTTPMethod~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Security/KeychainAccessTokenStore.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/KeychainAccessTokenStore~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/Session/SessionStore.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SessionStore~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/UI/ActivityShareSheet.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ActivityShareSheet~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/UI/AppTheme.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppTheme~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/UI/ProfileAvatarView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/UI/QuickLookPreview.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/QuickLookPreview~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Admin/AdminAPI.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Admin/AdminUsersView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Admin/AdminUsersViewModel.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersViewModel~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/App/AppRootView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AppRootView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/App/WorkspaceShellView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/WorkspaceShellView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Auth/AuthAPI.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthAPI~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Auth/LoginView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Auth/LoginViewModel.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginViewModel~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Home/HomeDashboardView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Settings/PreferenceControls.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Settings/ProfileSheetView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StarredView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StarredViewModel.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StarredViewModel~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageAPI.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageAPI~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageEntryRow.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntryRow~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageEntrySheets.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntrySheets~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageHomeView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageHomeViewModel.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageHomeViewModel~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageMoveSheet.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMoveSheet~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/TrashView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashView~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/TrashViewModel.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/TrashViewModel~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Admin/AdminUser.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUser~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/AuthUser.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AuthUser~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/LoginRequest.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginRequest~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/LoginResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/LogoutResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/MeResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/UpdateProfileImageResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Storage/StorageEntry.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Storage/StorageFileMetadata.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageFileMetadata~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Storage/StorageListResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageListResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Storage/StorageMutationResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageMutationResponse~partial.swiftmodule"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/pcloud_appApp.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.dia",
+    "index-unit-output-path" : "/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.o",
+    "llvm-bc" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.bc",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp.swiftdeps",
+    "swiftmodule" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/pcloud_appApp~partial.swiftmodule"
+  }
+}

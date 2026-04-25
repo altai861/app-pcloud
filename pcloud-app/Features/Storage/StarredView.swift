@@ -113,11 +113,40 @@ struct StarredView: View {
                 ForEach(viewModel.entries) { entry in
                     StorageEntryRow(
                         entry: entry,
-                        action: { openEntry(entry) }
+                        action: { openEntry(entry) },
+                        onRenameEntry: renameEntryAction,
+                        onMoveEntry: moveEntryAction,
+                        onMoveToTrash: moveEntryToTrashAction
                     )
                 }
             }
         }
+    }
+
+    @MainActor
+    private func renameEntryAction(_ selectedEntry: StorageEntry, _ newName: String) async throws {
+        try await viewModel.renameEntry(
+            selectedEntry,
+            newName: newName,
+            using: sessionStore
+        )
+    }
+
+    @MainActor
+    private func moveEntryAction(_ selectedEntry: StorageEntry, _ destinationFolderID: Int64) async throws {
+        try await viewModel.moveEntry(
+            selectedEntry,
+            destinationFolderID: destinationFolderID,
+            using: sessionStore
+        )
+    }
+
+    @MainActor
+    private func moveEntryToTrashAction(_ selectedEntry: StorageEntry) async throws {
+        try await viewModel.moveEntryToTrash(
+            selectedEntry,
+            using: sessionStore
+        )
     }
 
     private func openEntry(_ entry: StorageEntry) {

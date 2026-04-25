@@ -1,0 +1,24 @@
+{
+  "source": "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/App/WorkspaceShellView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "@%@",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 238
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld%%",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 305
+        }
+      }
+    ]
+  },
+  "version": 1
+}

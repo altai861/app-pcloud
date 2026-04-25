@@ -1,6 +1,6 @@
 import Foundation
 
-struct StorageEntry: Codable, Identifiable {
+struct StorageEntry: Codable, Identifiable, Sendable {
     let rawID: Int64
     let name: String
     let path: String

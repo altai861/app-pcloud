@@ -8,6 +8,8 @@ struct WorkspaceShellView: View {
 
     @StateObject private var storageViewModel = StorageHomeViewModel()
     @StateObject private var starredViewModel = StarredViewModel()
+    @StateObject private var sharedViewModel = SharedViewModel()
+    @StateObject private var trashViewModel = TrashViewModel()
     @StateObject private var adminUsersViewModel = AdminUsersViewModel()
     @State private var selectedTab: WorkspaceTab = .home
     @State private var isSidebarPresented = false
@@ -17,6 +19,7 @@ struct WorkspaceShellView: View {
     @State private var showingCreateFolderAlert = false
     @State private var newFolderName = ""
     @State private var storageActionErrorMessage: String?
+    @State private var skipNextStorageRefresh = false
 
     var body: some View {
         ZStack(alignment: .leading) {
@@ -57,9 +60,17 @@ struct WorkspaceShellView: View {
             Task {
                 switch newTab {
                 case .storage:
-                    await storageViewModel.refresh(using: sessionStore)
+                    if skipNextStorageRefresh {
+                        skipNextStorageRefresh = false
+                    } else {
+                        await storageViewModel.refresh(using: sessionStore)
+                    }
                 case .starred:
                     await starredViewModel.refresh(using: sessionStore)
+                case .shared:
+                    await sharedViewModel.refresh(using: sessionStore)
+                case .trash:
+                    await trashViewModel.refresh(using: sessionStore)
                 default:
                     break
                 }
@@ -146,17 +157,14 @@ struct WorkspaceShellView: View {
                 onMenuTap: toggleSidebar
             )
         case .shared:
-            WorkspacePlaceholderView(
-                title: strings.shared,
-                subtitle: "",
-                systemImage: "person.2.fill",
-                onMenuTap: toggleSidebar
+            SharedView(
+                viewModel: sharedViewModel,
+                onMenuTap: toggleSidebar,
+                onOpenFolder: openSharedFolder
             )
         case .trash:
-            WorkspacePlaceholderView(
-                title: strings.trash,
-                subtitle: "",
-                systemImage: "trash.fill",
+            TrashView(
+                viewModel: trashViewModel,
                 onMenuTap: toggleSidebar
             )
         case .admin:
@@ -429,6 +437,14 @@ struct WorkspaceShellView: View {
                 starredHint: entry.isStarred,
                 using: sessionStore
             )
+        }
+    }
+
+    private func openSharedFolder(_ entry: SharedResourceEntry) {
+        Task {
+            await storageViewModel.openFolder(id: entry.resourceId, using: sessionStore)
+            skipNextStorageRefresh = true
+            selectedTab = .storage
         }
     }
 

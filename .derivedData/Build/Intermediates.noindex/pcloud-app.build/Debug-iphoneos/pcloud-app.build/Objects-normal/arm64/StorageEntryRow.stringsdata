@@ -1,0 +1,16 @@
+{
+  "source": "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Storage/StorageEntryRow.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "•",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 82
+        }
+      }
+    ]
+  },
+  "version": 1
+}

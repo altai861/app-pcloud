@@ -327,7 +327,11 @@ struct StorageHomeView: View {
                     ForEach(filteredEntries) { entry in
                         StorageEntryRow(
                             entry: entry,
-                            action: { openEntry(entry) }
+                            action: { openEntry(entry) },
+                            onRenameEntry: renameEntryAction,
+                            onMoveEntry: isOwner ? moveEntryAction : nil,
+                            onMoveToTrash: isOwner ? moveEntryToTrashAction : nil,
+                            allowsSharing: isOwner
                         )
                     }
                 }
@@ -341,13 +345,55 @@ struct StorageHomeView: View {
         }
     }
 
+    private var isOwner: Bool {
+        (viewModel.response?.currentPrivilege ?? "owner").lowercased() == "owner"
+    }
+
     private func storageGridCard(_ entry: StorageEntry) -> some View {
-        Button {
-            openEntry(entry)
-        } label: {
-            storageGridCardContent(entry)
+        ZStack(alignment: .topTrailing) {
+            Button {
+                openEntry(entry)
+            } label: {
+                storageGridCardContent(entry)
+            }
+            .buttonStyle(.plain)
+
+            StorageEntryActionsMenu(
+                entry: entry,
+                onRenameEntry: renameEntryAction,
+                onMoveEntry: isOwner ? moveEntryAction : nil,
+                onMoveToTrash: isOwner ? moveEntryToTrashAction : nil,
+                allowsSharing: isOwner
+            )
+                .padding(.top, 12)
+                .padding(.trailing, 12)
         }
-        .buttonStyle(.plain)
+    }
+
+    @MainActor
+    private func renameEntryAction(_ selectedEntry: StorageEntry, _ newName: String) async throws {
+        try await viewModel.renameEntry(
+            selectedEntry,
+            newName: newName,
+            using: sessionStore
+        )
+    }
+
+    @MainActor
+    private func moveEntryAction(_ selectedEntry: StorageEntry, _ destinationFolderID: Int64) async throws {
+        try await viewModel.moveEntry(
+            selectedEntry,
+            destinationFolderID: destinationFolderID,
+            using: sessionStore
+        )
+    }
+
+    @MainActor
+    private func moveEntryToTrashAction(_ selectedEntry: StorageEntry) async throws {
+        try await viewModel.moveEntryToTrash(
+            selectedEntry,
+            using: sessionStore
+        )
     }
 
     private func storageGridCardContent(_ entry: StorageEntry) -> some View {
@@ -372,6 +418,7 @@ struct StorageHomeView: View {
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(14)
+        .padding(.top, 30)
         .background(
             RoundedRectangle(cornerRadius: 22, style: .continuous)
                 .fill(AppPalette.card)

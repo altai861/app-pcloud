@@ -70,6 +70,94 @@ final class StarredViewModel: ObservableObject {
         }
     }
 
+    func moveEntryToTrash(
+        _ entry: StorageEntry,
+        using sessionStore: SessionStore
+    ) async throws {
+        isMutating = true
+        errorMessage = nil
+
+        defer { isMutating = false }
+
+        do {
+            _ = try await sessionStore.makeStorageAPI().moveToTrash(entry: entry)
+            entries.removeAll { $0.id == entry.id }
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+            throw apiError
+        } catch {
+            errorMessage = error.localizedDescription
+            throw error
+        }
+    }
+
+    func renameEntry(
+        _ entry: StorageEntry,
+        newName: String,
+        using sessionStore: SessionStore
+    ) async throws {
+        guard !newName.isEmpty else {
+            return
+        }
+
+        guard newName != entry.name else {
+            return
+        }
+
+        isMutating = true
+        errorMessage = nil
+
+        defer { isMutating = false }
+
+        do {
+            _ = try await sessionStore.makeStorageAPI().renameEntry(entry, newName: newName)
+            entries = try await sessionStore.makeStorageAPI().listStarred().entries
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+            throw apiError
+        } catch {
+            errorMessage = error.localizedDescription
+            throw error
+        }
+    }
+
+    func moveEntry(
+        _ entry: StorageEntry,
+        destinationFolderID: Int64,
+        using sessionStore: SessionStore
+    ) async throws {
+        isMutating = true
+        errorMessage = nil
+
+        defer { isMutating = false }
+
+        do {
+            _ = try await sessionStore.makeStorageAPI().moveEntry(
+                entry,
+                destinationFolderID: destinationFolderID
+            )
+            entries = try await sessionStore.makeStorageAPI().listStarred().entries
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+            throw apiError
+        } catch {
+            errorMessage = error.localizedDescription
+            throw error
+        }
+    }
+
     private func applyUpdatedEntry(_ updatedEntry: StorageEntry) {
         if updatedEntry.isStarred {
             if let index = entries.firstIndex(where: { $0.id == updatedEntry.id }) {

@@ -1,0 +1,32 @@
+{
+  "source": "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Admin/AdminUsersView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "@%@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@: %@",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 518
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 506
+        }
+      }
+    ]
+  },
+  "version": 1
+}

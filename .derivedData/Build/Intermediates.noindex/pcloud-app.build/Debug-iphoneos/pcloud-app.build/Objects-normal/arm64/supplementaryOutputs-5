@@ -1,0 +1,23 @@
+{
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Home/HomeDashboardView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/HomeDashboardView.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Settings/PreferenceControls.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/PreferenceControls.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Settings/ProfileSheetView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileSheetView.swiftdeps"
+  }
+}

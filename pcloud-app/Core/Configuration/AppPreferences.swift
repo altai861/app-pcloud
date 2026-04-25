@@ -408,15 +408,162 @@ struct AppStrings {
 
     var sharedSubtitle: String {
         switch language {
-        case .english: "This area is ready for incoming shared folders and files when we hook up the shared resources API."
-        case .mongolian: "Хуваалцсан нөөцийн API-г холбоход орж ирсэн файл, хавтаснууд энд гарч ирнэ."
+        case .english: "Files and folders shared with you appear here."
+        case .mongolian: "Таны хуваалцсан файл, хавтаснууд энд харагдана."
+        }
+    }
+
+    var sharedSearchPlaceholder: String {
+        switch language {
+        case .english: "Search in Shared"
+        case .mongolian: "Хуваалцсанаас хайх"
+        }
+    }
+
+    var loadingShared: String {
+        switch language {
+        case .english: "Loading shared items..."
+        case .mongolian: "Хуваалцсан зүйлсийг ачаалж байна..."
+        }
+    }
+
+    var sharedLoadErrorTitle: String {
+        switch language {
+        case .english: "Couldn't Load Shared Items"
+        case .mongolian: "Хуваалцсан зүйлсийг ачаалж чадсангүй"
+        }
+    }
+
+    var noSharedItemsTitle: String {
+        switch language {
+        case .english: "Nothing shared with you yet."
+        case .mongolian: "Одоогоор таны хуваалцсан зүйл алга."
+        }
+    }
+
+    var noSharedItemsSubtitle: String {
+        switch language {
+        case .english: "When someone shares a file or folder with you, it will appear here."
+        case .mongolian: "Хэн нэгэн файл эсвэл хавтас хуваалцвал энд харагдана."
+        }
+    }
+
+    func sharedByOwner(_ ownerUsername: String) -> String {
+        switch language {
+        case .english: "by \(ownerUsername)"
+        case .mongolian: "\(ownerUsername)-ийн"
+        }
+    }
+
+    var privilegeViewer: String {
+        switch language {
+        case .english: "Viewer"
+        case .mongolian: "Харагч"
+        }
+    }
+
+    var privilegeEditor: String {
+        switch language {
+        case .english: "Editor"
+        case .mongolian: "Засварлагч"
+        }
+    }
+
+    func shareTitle(_ name: String) -> String {
+        switch language {
+        case .english: "Share \"\(name)\""
+        case .mongolian: "\"\(name)\" хуваалцах"
+        }
+    }
+
+    var shareCurrentPermissions: String {
+        switch language {
+        case .english: "Shared With"
+        case .mongolian: "Хуваалцсан хэрэглэгчид"
+        }
+    }
+
+    var shareNoPermissions: String {
+        switch language {
+        case .english: "Not shared with anyone yet."
+        case .mongolian: "Одоогоор хэн нэгэнтэй хуваалцаагүй."
+        }
+    }
+
+    var shareAddPeople: String {
+        switch language {
+        case .english: "Add People"
+        case .mongolian: "Хүн нэмэх"
+        }
+    }
+
+    var shareSearchUsersPlaceholder: String {
+        switch language {
+        case .english: "Search users..."
+        case .mongolian: "Хэрэглэгч хайх..."
+        }
+    }
+
+    var shareNoUsersFound: String {
+        switch language {
+        case .english: "No users found."
+        case .mongolian: "Хэрэглэгч олдсонгүй."
+        }
+    }
+
+    var sharePrivilegeLabel: String {
+        switch language {
+        case .english: "Permission"
+        case .mongolian: "Эрх"
+        }
+    }
+
+    var shareShare: String {
+        switch language {
+        case .english: "Share"
+        case .mongolian: "Хуваалцах"
+        }
+    }
+
+    var shareSharing: String {
+        switch language {
+        case .english: "Sharing..."
+        case .mongolian: "Хуваалцаж байна..."
+        }
+    }
+
+    var shareRemoveAccess: String {
+        switch language {
+        case .english: "Remove Access"
+        case .mongolian: "Эрх хасах"
         }
     }
 
     var trashSubtitle: String {
         switch language {
-        case .english: "Trashed files and folders can land here once we connect the trash endpoints."
-        case .mongolian: "Хогийн API-г холбоход устгасан файл, хавтаснууд энд харагдана."
+        case .english: "Items here are soft-deleted. Permanent delete cannot be undone."
+        case .mongolian: "Энд байгаа зүйлс soft-delete төлөвтэй. Permanent delete буцаах боломжгүй."
+        }
+    }
+
+    var noTrashItemsTitle: String {
+        switch language {
+        case .english: "Trash is empty."
+        case .mongolian: "Хог хоосон байна."
+        }
+    }
+
+    var noTrashItemsSubtitle: String {
+        switch language {
+        case .english: "Files and folders you move to trash will show up here."
+        case .mongolian: "Хогийн сав руу зөөсөн файл, хавтаснууд энд харагдана."
+        }
+    }
+
+    var trashLoadErrorTitle: String {
+        switch language {
+        case .english: "Couldn't Load Trash"
+        case .mongolian: "Хогийг ачаалж чадсангүй"
         }
     }
 
@@ -574,6 +721,13 @@ struct AppStrings {
         }
     }
 
+    var trashSearchPlaceholder: String {
+        switch language {
+        case .english: "Search in Trash"
+        case .mongolian: "Хогоос хайх"
+        }
+    }
+
     var entries: String {
         switch language {
         case .english: "Entries"
@@ -613,6 +767,302 @@ struct AppStrings {
         switch language {
         case .english: "File preview is coming soon."
         case .mongolian: "Файлын preview удахгүй нэмэгдэнэ."
+        }
+    }
+
+    var entryActions: String {
+        switch language {
+        case .english: "Entry Actions"
+        case .mongolian: "Файл, хавтасны үйлдэл"
+        }
+    }
+
+    var entryActionsComingSoon: String {
+        switch language {
+        case .english: "More actions coming soon"
+        case .mongolian: "Нэмэлт үйлдлүүд удахгүй нэмэгдэнэ"
+        }
+    }
+
+    var rename: String {
+        switch language {
+        case .english: "Rename"
+        case .mongolian: "Нэр солих"
+        }
+    }
+
+    var newName: String {
+        switch language {
+        case .english: "New Name"
+        case .mongolian: "Шинэ нэр"
+        }
+    }
+
+    var newNamePlaceholder: String {
+        switch language {
+        case .english: "Enter a new name"
+        case .mongolian: "Шинэ нэр оруулна уу"
+        }
+    }
+
+    var renaming: String {
+        switch language {
+        case .english: "Renaming..."
+        case .mongolian: "Нэрийг сольж байна..."
+        }
+    }
+
+    var renameNameEmpty: String {
+        switch language {
+        case .english: "Name cannot be empty."
+        case .mongolian: "Нэр хоосон байж болохгүй."
+        }
+    }
+
+    var shareAction: String {
+        switch language {
+        case .english: "Share"
+        case .mongolian: "Хуваалцах"
+        }
+    }
+
+    var move: String {
+        switch language {
+        case .english: "Move"
+        case .mongolian: "Зөөх"
+        }
+    }
+
+    var moveTitle: String {
+        switch language {
+        case .english: "Move Item"
+        case .mongolian: "Зүйл зөөх"
+        }
+    }
+
+    var moving: String {
+        switch language {
+        case .english: "Moving..."
+        case .mongolian: "Зөөж байна..."
+        }
+    }
+
+    var moveRoot: String {
+        switch language {
+        case .english: "Root"
+        case .mongolian: "Үндэс"
+        }
+    }
+
+    var moveUp: String {
+        switch language {
+        case .english: "Up"
+        case .mongolian: "Дээш"
+        }
+    }
+
+    var moveDestination: String {
+        switch language {
+        case .english: "Destination"
+        case .mongolian: "Очих хавтас"
+        }
+    }
+
+    var moveCurrentLocation: String {
+        switch language {
+        case .english: "Current location"
+        case .mongolian: "Одоогийн байрлал"
+        }
+    }
+
+    var moveLoadingFolders: String {
+        switch language {
+        case .english: "Loading folders..."
+        case .mongolian: "Хавтаснуудыг ачаалж байна..."
+        }
+    }
+
+    var moveNoFolders: String {
+        switch language {
+        case .english: "No folders here."
+        case .mongolian: "Энд хавтас алга."
+        }
+    }
+
+    var moveSelectCurrentFolder: String {
+        switch language {
+        case .english: "Select Current Folder"
+        case .mongolian: "Одоогийн хавтсыг сонгох"
+        }
+    }
+
+    var moveSelectDestination: String {
+        switch language {
+        case .english: "Select"
+        case .mongolian: "Сонгох"
+        }
+    }
+
+    var moveSelectedDestination: String {
+        switch language {
+        case .english: "Selected"
+        case .mongolian: "Сонгосон"
+        }
+    }
+
+    var moveErrorSelectDestination: String {
+        switch language {
+        case .english: "Select a destination folder."
+        case .mongolian: "Очих хавтсаа сонгоно уу."
+        }
+    }
+
+    var moveErrorLoadFolders: String {
+        switch language {
+        case .english: "Failed to load folders."
+        case .mongolian: "Хавтаснуудыг ачаалж чадсангүй."
+        }
+    }
+
+    var moveErrorSubmit: String {
+        switch language {
+        case .english: "Failed to move the item."
+        case .mongolian: "Зүйлийг зөөж чадсангүй."
+        }
+    }
+
+    var moveWarnSelf: String {
+        switch language {
+        case .english: "A folder cannot be moved into itself."
+        case .mongolian: "Хавтсыг өөр рүү нь зөөх боломжгүй."
+        }
+    }
+
+    var moveWarnChild: String {
+        switch language {
+        case .english: "A folder cannot be moved into its child folder."
+        case .mongolian: "Хавтсыг өөрийн дэд хавтас руу зөөх боломжгүй."
+        }
+    }
+
+    var previewFile: String {
+        switch language {
+        case .english: "Preview"
+        case .mongolian: "Урьдчилан харах"
+        }
+    }
+
+    var openFolder: String {
+        switch language {
+        case .english: "Open"
+        case .mongolian: "Нээх"
+        }
+    }
+
+    var downloadFile: String {
+        switch language {
+        case .english: "Download File"
+        case .mongolian: "Файл татах"
+        }
+    }
+
+    var moveToTrash: String {
+        switch language {
+        case .english: "Move to Trash"
+        case .mongolian: "Хогийн сав руу зөөх"
+        }
+    }
+
+    var restore: String {
+        switch language {
+        case .english: "Restore"
+        case .mongolian: "Сэргээх"
+        }
+    }
+
+    var deletePermanently: String {
+        switch language {
+        case .english: "Delete Permanently"
+        case .mongolian: "Бүр мөсөн устгах"
+        }
+    }
+
+    var deleting: String {
+        switch language {
+        case .english: "Deleting..."
+        case .mongolian: "Устгаж байна..."
+        }
+    }
+
+    var loadingTrash: String {
+        switch language {
+        case .english: "Loading trash items..."
+        case .mongolian: "Хогийн зүйлсийг ачаалж байна..."
+        }
+    }
+
+    var deletedRecently: String {
+        switch language {
+        case .english: "Deleted recently"
+        case .mongolian: "Саяхан устгасан"
+        }
+    }
+
+    func deletedOn(_ date: Date, locale: Locale) -> String {
+        let formattedDate = date.formatted(
+            Date.FormatStyle()
+                .year()
+                .month(.abbreviated)
+                .day()
+                .locale(locale)
+        )
+
+        switch language {
+        case .english:
+            return "Deleted \(formattedDate)"
+        case .mongolian:
+            return "Устгасан: \(formattedDate)"
+        }
+    }
+
+    var deletePermanentlyConfirmTitle: String {
+        switch language {
+        case .english: "Delete Permanently?"
+        case .mongolian: "Бүр мөсөн устгах уу?"
+        }
+    }
+
+    func deletePermanentlyConfirmMessage(entryName: String, isFolder: Bool) -> String {
+        switch language {
+        case .english:
+            return isFolder
+                ? "Delete folder \"\(entryName)\" and all its contents permanently? This cannot be undone."
+                : "Delete file \"\(entryName)\" permanently? This cannot be undone."
+        case .mongolian:
+            return isFolder
+                ? "\"\(entryName)\" хавтас болон доторх бүх зүйлсийг бүр мөсөн устгах уу? Буцаах боломжгүй."
+                : "\"\(entryName)\" файлыг бүр мөсөн устгах уу? Буцаах боломжгүй."
+        }
+    }
+
+    var loadingFilePreview: String {
+        switch language {
+        case .english: "Loading preview..."
+        case .mongolian: "Урьдчилан харахыг ачаалж байна..."
+        }
+    }
+
+    var previewUnsupported: String {
+        switch language {
+        case .english: "Preview is not available for this file type."
+        case .mongolian: "Энэ файлын төрөлд урьдчилан харах боломжгүй."
+        }
+    }
+
+    var previewTextTooLarge: String {
+        switch language {
+        case .english: "Text preview is not available for files larger than 5 MB."
+        case .mongolian: "5 MB-аас том текст файлыг урьдчилан харах боломжгүй."
         }
     }
 

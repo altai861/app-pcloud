@@ -88,11 +88,20 @@ final class StorageHomeViewModel: ObservableObject {
             return
         }
 
-        await load(path: entry.path, starredHint: entry.isStarred, using: sessionStore)
+        let isOwner = (response?.currentPrivilege ?? "owner").lowercased() == "owner"
+        if isOwner {
+            await load(path: entry.path, starredHint: entry.isStarred, using: sessionStore)
+        } else {
+            await loadByFolderID(entry.rawID, using: sessionStore)
+        }
     }
 
     func openFolder(path: String, starredHint: Bool? = nil, using sessionStore: SessionStore) async {
         await load(path: path, starredHint: starredHint, using: sessionStore)
+    }
+
+    func openFolder(id folderID: Int64, using sessionStore: SessionStore) async {
+        await loadByFolderID(folderID, using: sessionStore)
     }
 
     func goToParent(using sessionStore: SessionStore) async {
@@ -100,8 +109,13 @@ final class StorageHomeViewModel: ObservableObject {
             return
         }
 
-        let targetPath = parentPath ?? "/"
-        await load(path: targetPath, starredHint: starredStateByPath[targetPath], using: sessionStore)
+        let isOwner = (response?.currentPrivilege ?? "owner").lowercased() == "owner"
+        if !isOwner, let parentFolderID = response?.parentFolderId {
+            await loadByFolderID(parentFolderID, using: sessionStore)
+        } else {
+            let targetPath = parentPath ?? "/"
+            await load(path: targetPath, starredHint: starredStateByPath[targetPath], using: sessionStore)
+        }
     }
 
     func setCurrentFolderStarred(_ starred: Bool, using sessionStore: SessionStore) async throws {
@@ -161,6 +175,27 @@ final class StorageHomeViewModel: ObservableObject {
         }
     }
 
+    private func loadByFolderID(_ folderID: Int64, using sessionStore: SessionStore) async {
+        isLoading = true
+        errorMessage = nil
+
+        defer { isLoading = false }
+
+        do {
+            response = try await sessionStore.makeStorageAPI().listByFolderID(folderID)
+            cacheStarredStates(from: response)
+            currentFolderIsStarred = false
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+        } catch {
+            errorMessage = error.localizedDescription
+        }
+    }
+
     private func load(path: String, starredHint: Bool? = nil, using sessionStore: SessionStore) async {
         isLoading = true
         errorMessage = nil
@@ -195,7 +230,95 @@ final class StorageHomeViewModel: ObservableObject {
                 parentPath: normalizedTargetPath,
                 parentFolderID: response?.currentFolderId
             )
-            response = try await api.list(path: currentPath)
+            response = try await refreshCurrentFolder(using: api)
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+            throw apiError
+        } catch {
+            errorMessage = error.localizedDescription
+            throw error
+        }
+    }
+
+    func moveEntry(
+        _ entry: StorageEntry,
+        destinationFolderID: Int64,
+        using sessionStore: SessionStore
+    ) async throws {
+        isMutating = true
+        errorMessage = nil
+
+        defer { isMutating = false }
+
+        do {
+            let api = try sessionStore.makeStorageAPI()
+            _ = try await api.moveEntry(entry, destinationFolderID: destinationFolderID)
+            response = try await refreshCurrentFolder(using: api)
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+            throw apiError
+        } catch {
+            errorMessage = error.localizedDescription
+            throw error
+        }
+    }
+
+    func renameEntry(
+        _ entry: StorageEntry,
+        newName: String,
+        using sessionStore: SessionStore
+    ) async throws {
+        guard !newName.isEmpty else {
+            return
+        }
+
+        guard newName != entry.name else {
+            return
+        }
+
+        isMutating = true
+        errorMessage = nil
+
+        defer { isMutating = false }
+
+        do {
+            let api = try sessionStore.makeStorageAPI()
+            _ = try await api.renameEntry(entry, newName: newName)
+            response = try await refreshCurrentFolder(using: api)
+        } catch let apiError as APIClientError {
+            if apiError.isUnauthorized {
+                sessionStore.clearSessionLocally()
+            }
+
+            errorMessage = apiError.localizedDescription
+            throw apiError
+        } catch {
+            errorMessage = error.localizedDescription
+            throw error
+        }
+    }
+
+    func moveEntryToTrash(
+        _ entry: StorageEntry,
+        using sessionStore: SessionStore
+    ) async throws {
+        isMutating = true
+        errorMessage = nil
+
+        defer { isMutating = false }
+
+        do {
+            let api = try sessionStore.makeStorageAPI()
+            _ = try await api.moveToTrash(entry: entry)
+            response = try await refreshCurrentFolder(using: api)
         } catch let apiError as APIClientError {
             if apiError.isUnauthorized {
                 sessionStore.clearSessionLocally()
@@ -263,13 +386,13 @@ final class StorageHomeViewModel: ObservableObject {
                 uploadedAnyFile = true
             }
 
-            response = try await api.list(path: currentPath)
+            response = try await refreshCurrentFolder(using: api)
             showUploadCompletion(totalCount: files.count)
         } catch let apiError as APIClientError {
             clearUploadProgress()
 
             if uploadedAnyFile {
-                response = try? await api.list(path: currentPath)
+                response = try? await refreshCurrentFolder(using: api)
             }
 
             if apiError.isUnauthorized {
@@ -282,7 +405,7 @@ final class StorageHomeViewModel: ObservableObject {
             clearUploadProgress()
 
             if uploadedAnyFile {
-                response = try? await api.list(path: currentPath)
+                response = try? await refreshCurrentFolder(using: api)
             }
 
             errorMessage = error.localizedDescription
@@ -292,6 +415,13 @@ final class StorageHomeViewModel: ObservableObject {
 
     private var normalizedTargetPath: String? {
         currentPath == "/" ? nil : currentPath
+    }
+
+    private func refreshCurrentFolder(using api: StorageAPI) async throws -> StorageListResponse {
+        if let folderID = response?.currentFolderId {
+            return try await api.listByFolderID(folderID)
+        }
+        return try await api.list(path: currentPath)
     }
 
     private func cacheStarredStates(from response: StorageListResponse?) {

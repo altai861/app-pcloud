@@ -1,0 +1,37 @@
+{
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/LoginResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LoginResponse.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/LogoutResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/LogoutResponse.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/MeResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/MeResponse.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Auth/UpdateProfileImageResponse.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/UpdateProfileImageResponse.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Models/Storage/StorageEntry.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/StorageEntry.swiftdeps"
+  }
+}

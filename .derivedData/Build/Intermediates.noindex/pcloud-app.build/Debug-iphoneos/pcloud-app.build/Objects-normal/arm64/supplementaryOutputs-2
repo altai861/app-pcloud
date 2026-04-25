@@ -1,0 +1,23 @@
+{
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Core/UI/ProfileAvatarView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/ProfileAvatarView.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Admin/AdminAPI.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminAPI.swiftdeps"
+  },
+  "/Users/altaigantumur/Documents/diploma/pcloud-app/pcloud-app/Features/Admin/AdminUsersView.swift" : {
+    "const-values" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.swiftconstvalues",
+    "dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.d",
+    "diagnostics" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.dia",
+    "object" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.o",
+    "swift-dependencies" : "/Users/altaigantumur/Documents/diploma/pcloud-app/.derivedData/Build/Intermediates.noindex/pcloud-app.build/Debug-iphoneos/pcloud-app.build/Objects-normal/arm64/AdminUsersView.swiftdeps"
+  }
+}
