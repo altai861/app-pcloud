@@ -97,15 +97,9 @@ struct StarredView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .appCard()
         } else if viewModel.entries.isEmpty {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(strings.noStarredItemsTitle)
-                    .font(.headline.weight(.semibold))
-                    .foregroundStyle(AppPalette.textPrimary)
-
-                Text(strings.noStarredItemsSubtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(AppPalette.textSecondary)
-            }
+            Text(strings.noStarredItemsTitle)
+                .font(.headline.weight(.semibold))
+                .foregroundStyle(AppPalette.textPrimary)
             .frame(maxWidth: .infinity, alignment: .leading)
             .appCard()
         } else {

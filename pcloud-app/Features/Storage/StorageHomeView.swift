@@ -310,15 +310,9 @@ struct StorageHomeView: View {
             .frame(maxWidth: .infinity, alignment: .leading)
             .appCard()
         } else if filteredEntries.isEmpty {
-            VStack(alignment: .leading, spacing: 10) {
-                Text(searchText.isEmpty ? strings.noEntriesTitle : strings.noMatchesTitle)
-                    .font(.headline.weight(.semibold))
-                    .foregroundStyle(AppPalette.textPrimary)
-
-                Text(searchText.isEmpty ? strings.noEntriesSubtitle : strings.noMatchesSubtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(AppPalette.textSecondary)
-            }
+            Text(searchText.isEmpty ? strings.noEntriesTitle : strings.noMatchesTitle)
+                .font(.headline.weight(.semibold))
+                .foregroundStyle(AppPalette.textPrimary)
             .frame(maxWidth: .infinity, alignment: .leading)
             .appCard()
         } else {

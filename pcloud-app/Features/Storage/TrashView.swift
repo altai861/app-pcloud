@@ -115,17 +115,6 @@ struct TrashView: View {
                 Capsule()
                     .stroke(AppPalette.stroke, lineWidth: 1)
             )
-
-            VStack(alignment: .leading, spacing: 6) {
-                Text(strings.trash)
-                    .font(.headline.weight(.semibold))
-                    .foregroundStyle(AppPalette.textPrimary)
-
-                Text(strings.trashSubtitle)
-                    .font(.subheadline)
-                    .foregroundStyle(AppPalette.textSecondary)
-            }
-            .appCard(padding: 18)
         }
         .padding(.horizontal, 20)
         .padding(.top, 12)
@@ -167,15 +156,9 @@ struct TrashView: View {
             }
 
             if filteredEntries.isEmpty {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text(searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? strings.noTrashItemsTitle : strings.noMatchesTitle)
-                        .font(.headline.weight(.semibold))
-                        .foregroundStyle(AppPalette.textPrimary)
-
-                    Text(searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? strings.noTrashItemsSubtitle : strings.noMatchesSubtitle)
-                        .font(.subheadline)
-                        .foregroundStyle(AppPalette.textSecondary)
-                }
+                Text(searchText.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty ? strings.noTrashItemsTitle : strings.noMatchesTitle)
+                    .font(.headline.weight(.semibold))
+                    .foregroundStyle(AppPalette.textPrimary)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .appCard()
             } else {

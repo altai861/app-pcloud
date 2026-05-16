@@ -44,13 +44,6 @@ struct AppStrings {
         }
     }
 
-    var personalizeSubtitle: String {
-        switch language {
-        case .english: "Pick the look and language that feel right for you."
-        case .mongolian: "Өөрт тохирсон харагдах байдал, хэлээ сонгоорой."
-        }
-    }
-
     var themeTitle: String {
         switch language {
         case .english: "Theme"
@@ -111,6 +104,118 @@ struct AppStrings {
         switch language {
         case .english: "Cloud Server"
         case .mongolian: "Үүлэн сервер"
+        }
+    }
+
+    var connectServerTitle: String {
+        switch language {
+        case .english: "Connect to your cloud"
+        case .mongolian: "Өөрийн үүлэн санд холбогдох"
+        }
+    }
+
+    var manualServer: String {
+        switch language {
+        case .english: "Manual URL"
+        case .mongolian: "URL гараар оруулах"
+        }
+    }
+
+    var nearbyServers: String {
+        switch language {
+        case .english: "Nearby Servers"
+        case .mongolian: "Ойролцоох серверүүд"
+        }
+    }
+
+    var searchingNearbyServers: String {
+        switch language {
+        case .english: "Searching your local network..."
+        case .mongolian: "Дотоод сүлжээнээс хайж байна..."
+        }
+    }
+
+    var noNearbyServers: String {
+        switch language {
+        case .english: "No nearby servers."
+        case .mongolian: "Ойролцоох сервер алга."
+        }
+    }
+
+    var refresh: String {
+        switch language {
+        case .english: "Refresh"
+        case .mongolian: "Дахин хайх"
+        }
+    }
+
+    var useLAN: String {
+        switch language {
+        case .english: "LAN"
+        case .mongolian: "LAN"
+        }
+    }
+
+    var useRelay: String {
+        switch language {
+        case .english: "Relay"
+        case .mongolian: "Relay"
+        }
+    }
+
+    var relayDevice: String {
+        switch language {
+        case .english: "Relay Device"
+        case .mongolian: "Relay төхөөрөмж"
+        }
+    }
+
+    var savedDevices: String {
+        switch language {
+        case .english: "Saved Devices"
+        case .mongolian: "Хадгалсан төхөөрөмжүүд"
+        }
+    }
+
+    var deviceID: String {
+        switch language {
+        case .english: "Device ID"
+        case .mongolian: "Төхөөрөмжийн ID"
+        }
+    }
+
+    var relayReady: String {
+        switch language {
+        case .english: "Relay ready"
+        case .mongolian: "Relay бэлэн"
+        }
+    }
+
+    var relayUnavailable: String {
+        switch language {
+        case .english: "LAN only"
+        case .mongolian: "Зөвхөн LAN"
+        }
+    }
+
+    var selectedViaLAN: String {
+        switch language {
+        case .english: "Using local network"
+        case .mongolian: "Дотоод сүлжээгээр"
+        }
+    }
+
+    var selectedViaRelay: String {
+        switch language {
+        case .english: "Using relay tunnel"
+        case .mongolian: "Relay туннелээр"
+        }
+    }
+
+    var selectedManualServer: String {
+        switch language {
+        case .english: "Manual server URL"
+        case .mongolian: "Гараар оруулсан сервер"
         }
     }
 
@@ -254,15 +359,6 @@ struct AppStrings {
         }
     }
 
-    var simulatorHelp: String {
-        switch language {
-        case .english:
-            return "For simulator testing, `http://127.0.0.1:8080` works when the backend is running on this Mac. On a physical iPhone, use your Mac's LAN IP instead."
-        case .mongolian:
-            return "Симулятор дээр туршихдаа backend энэ Mac дээр ажиллаж байвал `http://127.0.0.1:8080` ашиглана. Бодит iPhone дээр бол Mac-ийнхаа дотоод сүлжээний IP-г ашиглана."
-        }
-    }
-
     var usernameRequired: String {
         switch language {
         case .english: "Username is required."
@@ -291,62 +387,6 @@ struct AppStrings {
             return "Welcome back, \(trimmedName)"
         case .mongolian:
             return "Тавтай морил, \(trimmedName)"
-        }
-    }
-
-    var homeSubtitle: String {
-        switch language {
-        case .english: "A calmer, native home for your personal cloud."
-        case .mongolian: "Таны хувийн үүлэн сангийн тайван, iOS-д нийцсэн нүүр хуудас."
-        }
-    }
-
-    var quickAccess: String {
-        switch language {
-        case .english: "Quick Access"
-        case .mongolian: "Түргэн хандалт"
-        }
-    }
-
-    var recentInRoot: String {
-        switch language {
-        case .english: "Recent In Root"
-        case .mongolian: "Root доторх сүүлийн файлууд"
-        }
-    }
-
-    var seeAll: String {
-        switch language {
-        case .english: "See All"
-        case .mongolian: "Бүгдийг харах"
-        }
-    }
-
-    var loadingWorkspace: String {
-        switch language {
-        case .english: "Loading workspace..."
-        case .mongolian: "Ажлын орчныг ачаалж байна..."
-        }
-    }
-
-    var workspaceLoadErrorTitle: String {
-        switch language {
-        case .english: "Couldn't load your workspace."
-        case .mongolian: "Ажлын орчныг ачаалж чадсангүй."
-        }
-    }
-
-    var emptyRoot: String {
-        switch language {
-        case .english: "Your root folder is empty for now."
-        case .mongolian: "Таны root хавтас одоогоор хоосон байна."
-        }
-    }
-
-    var home: String {
-        switch language {
-        case .english: "Home"
-        case .mongolian: "Нүүр"
         }
     }
 
@@ -385,31 +425,10 @@ struct AppStrings {
         }
     }
 
-    var starredSubtitle: String {
-        switch language {
-        case .english: "Files and folders you star will show up here."
-        case .mongolian: "Одолсон файл, хавтаснууд энд харагдана."
-        }
-    }
-
     var noStarredItemsTitle: String {
         switch language {
-        case .english: "No starred items yet."
-        case .mongolian: "Одоогоор одолсон зүйл алга."
-        }
-    }
-
-    var noStarredItemsSubtitle: String {
-        switch language {
-        case .english: "Star a file or folder to keep it close at hand."
-        case .mongolian: "Файл эсвэл хавтсыг одолж энд хурдан гаргаж ирээрэй."
-        }
-    }
-
-    var sharedSubtitle: String {
-        switch language {
-        case .english: "Files and folders shared with you appear here."
-        case .mongolian: "Таны хуваалцсан файл, хавтаснууд энд харагдана."
+        case .english: "No starred items."
+        case .mongolian: "Одолсон зүйл алга."
         }
     }
 
@@ -436,15 +455,8 @@ struct AppStrings {
 
     var noSharedItemsTitle: String {
         switch language {
-        case .english: "Nothing shared with you yet."
-        case .mongolian: "Одоогоор таны хуваалцсан зүйл алга."
-        }
-    }
-
-    var noSharedItemsSubtitle: String {
-        switch language {
-        case .english: "When someone shares a file or folder with you, it will appear here."
-        case .mongolian: "Хэн нэгэн файл эсвэл хавтас хуваалцвал энд харагдана."
+        case .english: "No shared items."
+        case .mongolian: "Хуваалцсан зүйл алга."
         }
     }
 
@@ -539,24 +551,10 @@ struct AppStrings {
         }
     }
 
-    var trashSubtitle: String {
-        switch language {
-        case .english: "Items here are soft-deleted. Permanent delete cannot be undone."
-        case .mongolian: "Энд байгаа зүйлс soft-delete төлөвтэй. Permanent delete буцаах боломжгүй."
-        }
-    }
-
     var noTrashItemsTitle: String {
         switch language {
         case .english: "Trash is empty."
         case .mongolian: "Хог хоосон байна."
-        }
-    }
-
-    var noTrashItemsSubtitle: String {
-        switch language {
-        case .english: "Files and folders you move to trash will show up here."
-        case .mongolian: "Хогийн сав руу зөөсөн файл, хавтаснууд энд харагдана."
         }
     }
 
@@ -641,13 +639,6 @@ struct AppStrings {
         switch language {
         case .english: "Server"
         case .mongolian: "Сервер"
-        }
-    }
-
-    var notes: String {
-        switch language {
-        case .english: "Notes"
-        case .mongolian: "Тэмдэглэл"
         }
     }
 
@@ -763,24 +754,10 @@ struct AppStrings {
         }
     }
 
-    var previewComingSoon: String {
-        switch language {
-        case .english: "File preview is coming soon."
-        case .mongolian: "Файлын preview удахгүй нэмэгдэнэ."
-        }
-    }
-
     var entryActions: String {
         switch language {
         case .english: "Entry Actions"
         case .mongolian: "Файл, хавтасны үйлдэл"
-        }
-    }
-
-    var entryActionsComingSoon: String {
-        switch language {
-        case .english: "More actions coming soon"
-        case .mongolian: "Нэмэлт үйлдлүүд удахгүй нэмэгдэнэ"
         }
     }
 
@@ -1066,13 +1043,6 @@ struct AppStrings {
         }
     }
 
-    var fileViewerTodo: String {
-        switch language {
-        case .english: "TODO: wire the actual file viewer here."
-        case .mongolian: "TODO: энд жинхэнэ file viewer-ийг холбоно."
-        }
-    }
-
     var starredStatus: String {
         switch language {
         case .english: "Starred"
@@ -1135,8 +1105,8 @@ struct AppStrings {
 
     var noEntriesTitle: String {
         switch language {
-        case .english: "No entries yet."
-        case .mongolian: "Одоогоор файл алга."
+        case .english: "No entries."
+        case .mongolian: "Файл алга."
         }
     }
 
@@ -1144,20 +1114,6 @@ struct AppStrings {
         switch language {
         case .english: "No matches found."
         case .mongolian: "Тохирох зүйл олдсонгүй."
-        }
-    }
-
-    var noEntriesSubtitle: String {
-        switch language {
-        case .english: "Upload or create something to bring this screen to life."
-        case .mongolian: "Энэ дэлгэцийг дүүргэхийн тулд файл оруулах эсвэл шинээр үүсгээрэй."
-        }
-    }
-
-    var noMatchesSubtitle: String {
-        switch language {
-        case .english: "Try a different file or folder name."
-        case .mongolian: "Өөр файл эсвэл хавтасны нэрээр оролдоно уу."
         }
     }
 
@@ -1233,13 +1189,6 @@ struct AppStrings {
         }
     }
 
-    var adminUsersSubtitle: String {
-        switch language {
-        case .english: "Review the account list, add new users, and keep the workspace tidy."
-        case .mongolian: "Хэрэглэгчдийн жагсаалтыг хянаж, шинэ хэрэглэгч нэмээд орчноо цэгцтэй байлгаарай."
-        }
-    }
-
     var usersCount: String {
         switch language {
         case .english: "Users"
@@ -1261,13 +1210,6 @@ struct AppStrings {
         }
     }
 
-    var addUserSubtitle: String {
-        switch language {
-        case .english: "Create a new regular account for the workspace."
-        case .mongolian: "Ажлын орчинд шинэ энгийн хэрэглэгч үүсгэнэ."
-        }
-    }
-
     var loadingUsers: String {
         switch language {
         case .english: "Loading users..."
@@ -1284,8 +1226,8 @@ struct AppStrings {
 
     var noUsersYet: String {
         switch language {
-        case .english: "No users are available yet."
-        case .mongolian: "Одоогоор хэрэглэгч алга байна."
+        case .english: "No users."
+        case .mongolian: "Хэрэглэгч алга."
         }
     }
 
@@ -1398,13 +1340,6 @@ struct AppStrings {
         switch language {
         case .english: "API Base URL"
         case .mongolian: "API суурь URL"
-        }
-    }
-
-    var serverNotes: String {
-        switch language {
-        case .english: "Use the client server address, for example `http://127.0.0.1:8080` in the simulator or your Mac's LAN IP on a physical iPhone."
-        case .mongolian: "Клиентэд ашиглах серверийн хаягийг оруулна уу. Жишээ нь симулятор дээр `http://127.0.0.1:8080`, бодит iPhone дээр Mac-ийнхаа дотоод сүлжээний IP-г ашиглана."
         }
     }
 

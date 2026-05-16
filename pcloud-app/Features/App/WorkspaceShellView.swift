@@ -11,7 +11,7 @@ struct WorkspaceShellView: View {
     @StateObject private var sharedViewModel = SharedViewModel()
     @StateObject private var trashViewModel = TrashViewModel()
     @StateObject private var adminUsersViewModel = AdminUsersViewModel()
-    @State private var selectedTab: WorkspaceTab = .home
+    @State private var selectedTab: WorkspaceTab = .storage
     @State private var isSidebarPresented = false
     @State private var showingFileImporter = false
     @State private var showingPhotoPicker = false
@@ -133,15 +133,7 @@ struct WorkspaceShellView: View {
 
     @ViewBuilder
     private var currentContentView: some View {
-        let strings = settingsStore.strings
-
         switch selectedTab {
-        case .home:
-            HomeDashboardView(
-                selectedTab: $selectedTab,
-                storageViewModel: storageViewModel,
-                onMenuTap: toggleSidebar
-            )
         case .starred:
             StarredView(
                 viewModel: starredViewModel,
@@ -557,7 +549,6 @@ private enum StoragePhotoImportError: LocalizedError {
 }
 
 enum WorkspaceTab: Hashable {
-    case home
     case starred
     case storage
     case shared
@@ -567,18 +558,17 @@ enum WorkspaceTab: Hashable {
 
 extension WorkspaceTab: CaseIterable {
     static var allCases: [WorkspaceTab] {
-        [.home, .starred, .storage, .shared, .trash, .admin]
+        [.starred, .storage, .shared, .trash, .admin]
     }
 
     static var primaryTabs: [WorkspaceTab] {
-        [.home, .starred, .storage, .shared]
+        [.storage, .starred, .shared]
     }
 }
 
 extension WorkspaceTab {
     func title(strings: AppStrings) -> String {
         switch self {
-        case .home: strings.home
         case .starred: strings.starred
         case .storage: strings.storage
         case .shared: strings.shared
@@ -589,80 +579,11 @@ extension WorkspaceTab {
 
     var systemImage: String {
         switch self {
-        case .home: "house.fill"
         case .starred: "star.fill"
         case .storage: "externaldrive.fill"
         case .shared: "person.2.fill"
         case .trash: "trash.fill"
         case .admin: "person.3.fill"
-        }
-    }
-}
-
-private struct WorkspacePlaceholderView: View {
-    let title: String
-    let subtitle: String
-    let systemImage: String
-    let onMenuTap: () -> Void
-
-    @State private var showingProfileSheet = false
-
-    var body: some View {
-        NavigationStack {
-            ZStack {
-                AppBackground()
-
-                VStack(spacing: 20) {
-                    Image(systemName: systemImage)
-                        .font(.system(size: 40, weight: .semibold))
-                        .foregroundStyle(AppPalette.textPrimary)
-                        .padding(24)
-                        .background(
-                            Circle()
-                                .fill(AppPalette.cardStrong)
-                        )
-
-                    VStack(spacing: 10) {
-                        Text(title)
-                            .font(.title2.weight(.bold))
-                            .foregroundStyle(AppPalette.textPrimary)
-
-                        if !subtitle.isEmpty {
-                            Text(subtitle)
-                                .font(.body)
-                                .foregroundStyle(AppPalette.textSecondary)
-                                .multilineTextAlignment(.center)
-                        }
-                    }
-                }
-                .padding(28)
-                .appCard(padding: 28)
-                .padding(24)
-            }
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button(action: onMenuTap) {
-                        Image(systemName: "line.3.horizontal")
-                            .foregroundStyle(AppPalette.textPrimary)
-                    }
-                }
-
-                ToolbarItem(placement: .principal) {
-                    Text(title)
-                        .font(.headline.weight(.semibold))
-                        .foregroundStyle(AppPalette.textPrimary)
-                }
-
-                ToolbarItem(placement: .topBarTrailing) {
-                    CurrentUserProfileButton {
-                        showingProfileSheet = true
-                    }
-                }
-            }
-            .sheet(isPresented: $showingProfileSheet) {
-                ProfileSheetView()
-            }
         }
     }
 }

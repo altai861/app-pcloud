@@ -5,7 +5,7 @@ struct LoginView: View {
     @EnvironmentObject private var settingsStore: AppSettingsStore
 
     @StateObject private var viewModel = LoginViewModel()
-    @State private var showingSettings = false
+    @State private var showingServerConnection = false
     @FocusState private var focusedField: LoginField?
 
     var body: some View {
@@ -15,10 +15,10 @@ struct LoginView: View {
 
                 VStack(spacing: 0) {
                     ScrollView(.vertical, showsIndicators: false) {
-                        VStack(spacing: 22) {
-                            Spacer(minLength: 24)
-                            brandCard
+                        VStack(spacing: 16) {
+                            Spacer(minLength: 16)
                             serverCard
+                            brandCard
                             signInCard
                         }
                         .padding(.horizontal, 20)
@@ -35,8 +35,8 @@ struct LoginView: View {
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
-            .sheet(isPresented: $showingSettings) {
-                SettingsView()
+            .sheet(isPresented: $showingServerConnection) {
+                ServerConnectionSheet()
             }
         }
     }
@@ -44,13 +44,13 @@ struct LoginView: View {
     private var brandCard: some View {
         let strings = settingsStore.strings
 
-        return VStack(spacing: 16) {
+        return VStack(spacing: 10) {
             RoundedRectangle(cornerRadius: 22, style: .continuous)
                 .fill(AppPalette.cardStrong)
-                .frame(height: 88)
+                .frame(height: 58)
                 .overlay {
                     Text(strings.appName)
-                        .font(.system(size: 28, weight: .heavy, design: .rounded))
+                        .font(.system(size: 24, weight: .heavy, design: .rounded))
                         .foregroundStyle(AppPalette.textPrimary)
                 }
                 .overlay(
@@ -58,40 +58,58 @@ struct LoginView: View {
                         .stroke(AppPalette.stroke, lineWidth: 1)
                 )
         }
-        .appCard(padding: 18)
+        .appCard(padding: 12)
     }
 
     private var serverCard: some View {
         let strings = settingsStore.strings
 
-        return Button {
-            showingSettings = true
-        } label: {
-            HStack(spacing: 14) {
-                Image(systemName: "network")
-                    .font(.headline)
+        return HStack(spacing: 10) {
+            Image(systemName: connectionModeSystemImage)
+                .font(.caption.weight(.bold))
+                .foregroundStyle(AppPalette.textPrimary)
+                .frame(width: 28, height: 28)
+                .background(
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(AppPalette.softBlue)
+                )
+
+            Text(connectionDisplayName)
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(AppPalette.textPrimary)
+                .lineLimit(1)
+
+            Spacer()
+
+            Button {
+                showingServerConnection = true
+            } label: {
+                Image(systemName: "gearshape")
+                    .font(.subheadline.weight(.semibold))
                     .foregroundStyle(AppPalette.textPrimary)
-
-                VStack(alignment: .leading, spacing: 4) {
-                    Text(strings.cloudServer)
-                        .font(.caption.weight(.semibold))
-                        .foregroundStyle(AppPalette.textSecondary)
-
-                    Text(settingsStore.apiBaseURLString)
-                        .font(.subheadline.weight(.medium))
-                        .foregroundStyle(AppPalette.textPrimary)
-                        .lineLimit(1)
-                }
-
-                Spacer()
-
-                Image(systemName: "slider.horizontal.3")
-                    .font(.headline)
-                    .foregroundStyle(AppPalette.textPrimary)
+                    .frame(width: 32, height: 32)
+                    .background(
+                        RoundedRectangle(cornerRadius: 11, style: .continuous)
+                            .fill(AppPalette.cardStrong)
+                    )
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 11, style: .continuous)
+                            .stroke(AppPalette.stroke, lineWidth: 1)
+                    )
             }
+            .buttonStyle(.plain)
+            .accessibilityLabel(strings.connectServerTitle)
         }
-        .buttonStyle(.plain)
-        .appCard(padding: 18)
+        .padding(.horizontal, 12)
+        .padding(.vertical, 10)
+        .background(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(AppPalette.cardStrong.opacity(0.72))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .stroke(AppPalette.stroke, lineWidth: 1)
+        )
     }
 
     private var signInCard: some View {
@@ -180,6 +198,48 @@ struct LoginView: View {
                 passwordRequiredMessage: strings.passwordRequired
             )
         }
+    }
+
+    private var connectionDisplayName: String {
+        if let selectedServerName = settingsStore.selectedServerName?.trimmingCharacters(in: .whitespacesAndNewlines),
+           !selectedServerName.isEmpty
+        {
+            return selectedServerName
+        }
+
+        if let selectedDeviceID = settingsStore.selectedDeviceID?.trimmingCharacters(in: .whitespacesAndNewlines),
+           !selectedDeviceID.isEmpty
+        {
+            return selectedDeviceID
+        }
+
+        return displayAddress(from: settingsStore.apiBaseURLString)
+    }
+
+    private var connectionModeSystemImage: String {
+        switch settingsStore.serverConnectionMode {
+        case .manual:
+            return "link"
+        case .lan:
+            return "wifi"
+        case .relay:
+            return "point.3.connected.trianglepath.dotted"
+        }
+    }
+
+    private func displayAddress(from rawValue: String) -> String {
+        guard
+            let url = AppSettingsStore.validatedURL(from: rawValue),
+            let host = url.host()
+        else {
+            return rawValue
+        }
+
+        if let port = url.port {
+            return "\(host):\(port)"
+        }
+
+        return host
     }
 }
 
