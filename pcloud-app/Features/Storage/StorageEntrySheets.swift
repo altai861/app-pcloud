@@ -188,25 +188,7 @@ struct StorageFilePlaceholderSheet: View {
     }
 
     private var fileSystemImage: String {
-        let name = entry.name.lowercased()
-
-        if name.hasSuffix(".pdf") {
-            return "doc.richtext.fill"
-        }
-
-        if ["png", "jpg", "jpeg", "gif", "webp", "heic"].contains(where: { name.hasSuffix($0) }) {
-            return "photo.fill"
-        }
-
-        if ["mp3", "wav", "ogg", "flac", "m4a", "aac"].contains(where: { name.hasSuffix($0) }) {
-            return "waveform"
-        }
-
-        if ["mp4", "webm", "mov", "m4v", "ogv"].contains(where: { name.hasSuffix($0) }) {
-            return "film.fill"
-        }
-
-        return "doc.text.fill"
+        StorageResourceIconDescriptor(name: entry.name, isFolder: entry.isFolder).systemImage
     }
 
     private func previewStatusMessage(strings: AppStrings) -> String {

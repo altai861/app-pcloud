@@ -51,14 +51,14 @@ struct StorageEntryRow: View {
 
     private var rowContent: some View {
         HStack(spacing: 14) {
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(entry.isFolder ? AppPalette.softBlue : AppPalette.cardStrong)
-                .frame(width: style.iconBoxSize, height: style.iconBoxSize)
-                .overlay {
-                    Image(systemName: entry.isFolder ? "folder.fill" : "doc.text.fill")
-                        .font(.system(size: style.iconSize, weight: .semibold))
-                        .foregroundStyle(entry.isFolder ? AppPalette.softBlueDeep : AppPalette.textPrimary)
-                }
+            StorageResourceIcon(
+                name: entry.name,
+                isFolder: entry.isFolder,
+                width: style.iconBoxSize,
+                height: style.iconBoxSize,
+                iconSize: style.iconSize,
+                cornerRadius: 16
+            )
 
             VStack(alignment: .leading, spacing: 6) {
                 HStack(alignment: .center, spacing: 8) {

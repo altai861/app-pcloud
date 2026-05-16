@@ -215,14 +215,14 @@ private struct TrashEntryRow: View {
 
     var body: some View {
         HStack(alignment: .top, spacing: 14) {
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
-                .fill(entry.isFolder ? AppPalette.softBlue : AppPalette.cardStrong)
-                .frame(width: 46, height: 46)
-                .overlay {
-                    Image(systemName: entry.isFolder ? "folder.fill" : "doc.text.fill")
-                        .font(.system(size: 20, weight: .semibold))
-                        .foregroundStyle(entry.isFolder ? AppPalette.softBlueDeep : AppPalette.textPrimary)
-                }
+            StorageResourceIcon(
+                name: entry.name,
+                isFolder: entry.isFolder,
+                width: 46,
+                height: 46,
+                iconSize: 20,
+                cornerRadius: 16
+            )
 
             VStack(alignment: .leading, spacing: 6) {
                 HStack(alignment: .center, spacing: 8) {

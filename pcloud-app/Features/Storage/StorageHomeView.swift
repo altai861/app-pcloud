@@ -392,14 +392,13 @@ struct StorageHomeView: View {
 
     private func storageGridCardContent(_ entry: StorageEntry) -> some View {
         VStack(alignment: .leading, spacing: 12) {
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
-                .fill(entry.isFolder ? AppPalette.softBlue : AppPalette.cardStrong)
-                .frame(height: 82)
-                .overlay {
-                    Image(systemName: entry.isFolder ? "folder.fill" : "doc.text.fill")
-                        .font(.system(size: 26, weight: .semibold))
-                        .foregroundStyle(entry.isFolder ? AppPalette.softBlueDeep : AppPalette.textPrimary)
-                }
+            StorageResourceIcon(
+                name: entry.name,
+                isFolder: entry.isFolder,
+                height: 82,
+                iconSize: 26,
+                cornerRadius: 18
+            )
 
             Text(entry.name)
                 .font(.subheadline.weight(.semibold))
