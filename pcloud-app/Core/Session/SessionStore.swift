@@ -11,6 +11,7 @@ final class SessionStore: ObservableObject {
     private let settingsStore: AppSettingsStore
     private let tokenStore: KeychainAccessTokenStore
     private var hasAttemptedRestore = false
+    private let restoreTimeoutInterval: TimeInterval = 6
 
     init(
         settingsStore: AppSettingsStore,
@@ -38,7 +39,9 @@ final class SessionStore: ObservableObject {
                 return
             }
 
-            let meResponse = try await makeAuthAPI().fetchCurrentUser(accessToken: savedToken)
+            let meResponse = try await makeAuthAPI(
+                timeoutInterval: restoreTimeoutInterval
+            ).fetchCurrentUser(accessToken: savedToken)
             applyAuthenticatedSession(accessToken: savedToken, user: meResponse.user)
         } catch {
             clearSessionState()
@@ -127,16 +130,16 @@ final class SessionStore: ObservableObject {
         return AdminAPI(client: try makeClient(), accessToken: accessToken)
     }
 
-    private func makeAuthAPI() throws -> AuthAPI {
-        AuthAPI(client: try makeClient())
+    private func makeAuthAPI(timeoutInterval: TimeInterval? = nil) throws -> AuthAPI {
+        AuthAPI(client: try makeClient(timeoutInterval: timeoutInterval))
     }
 
-    private func makeClient() throws -> APIClient {
+    private func makeClient(timeoutInterval: TimeInterval? = nil) throws -> APIClient {
         guard let baseURL = settingsStore.apiBaseURL else {
             throw SessionStoreError.invalidServerURL
         }
 
-        return APIClient(baseURL: baseURL)
+        return APIClient(baseURL: baseURL, timeoutInterval: timeoutInterval)
     }
 
     private func clearSessionState() {

@@ -3,13 +3,15 @@ import Foundation
 struct APIClient {
     let baseURL: URL
     let urlSession: URLSession
+    let timeoutInterval: TimeInterval?
 
     private let encoder = JSONEncoder()
     private let decoder = JSONDecoder()
 
-    init(baseURL: URL, urlSession: URLSession = .shared) {
+    init(baseURL: URL, urlSession: URLSession = .shared, timeoutInterval: TimeInterval? = nil) {
         self.baseURL = baseURL
         self.urlSession = urlSession
+        self.timeoutInterval = timeoutInterval
     }
 
     func get<Response: Decodable>(
@@ -203,6 +205,9 @@ struct APIClient {
     ) throws -> URLRequest {
         let url = try makeURL(path: path, queryItems: queryItems)
         var request = URLRequest(url: url)
+        if let timeoutInterval {
+            request.timeoutInterval = timeoutInterval
+        }
         request.httpMethod = method.rawValue
         request.cachePolicy = .reloadIgnoringLocalCacheData
         request.setValue(acceptType, forHTTPHeaderField: "Accept")
