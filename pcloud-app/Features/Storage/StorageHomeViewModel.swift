@@ -48,11 +48,13 @@ final class StorageHomeViewModel: ObservableObject {
     @Published private(set) var isMutating = false
     @Published private(set) var uploadProgress: StorageUploadProgress?
     @Published private(set) var currentFolderIsStarred = false
+    @Published private(set) var isBrowsingSharedResource = false
     @Published var errorMessage: String?
 
     private var hasLoadedInitialState = false
     private var uploadProgressDismissToken = UUID()
     private var starredStateByPath: [String: Bool] = ["/": false]
+    private var sharedRootFolderID: Int64?
 
     var entries: [StorageEntry] {
         response?.entries ?? []
@@ -70,6 +72,10 @@ final class StorageHomeViewModel: ObservableObject {
         currentPath == "/"
     }
 
+    private var isAtSharedRoot: Bool {
+        isBrowsingSharedResource && response?.currentFolderId == sharedRootFolderID
+    }
+
     func loadInitial(using sessionStore: SessionStore) async {
         guard !hasLoadedInitialState else {
             return
@@ -80,6 +86,11 @@ final class StorageHomeViewModel: ObservableObject {
     }
 
     func refresh(using sessionStore: SessionStore) async {
+        if isBrowsingSharedResource, let folderID = response?.currentFolderId {
+            await loadByFolderID(folderID, using: sessionStore)
+            return
+        }
+
         await load(path: currentPath, using: sessionStore)
     }
 
@@ -97,6 +108,7 @@ final class StorageHomeViewModel: ObservableObject {
     }
 
     func openFolder(path: String, starredHint: Bool? = nil, using sessionStore: SessionStore) async {
+        clearSharedBrowsingContext()
         await load(path: path, starredHint: starredHint, using: sessionStore)
     }
 
@@ -104,7 +116,23 @@ final class StorageHomeViewModel: ObservableObject {
         await loadByFolderID(folderID, using: sessionStore)
     }
 
+    func openSharedFolder(id folderID: Int64, using sessionStore: SessionStore) async {
+        sharedRootFolderID = folderID
+        isBrowsingSharedResource = true
+        await loadByFolderID(folderID, using: sessionStore)
+    }
+
+    func openRoot(using sessionStore: SessionStore) async {
+        clearSharedBrowsingContext()
+        await load(path: "/", using: sessionStore)
+    }
+
     func goToParent(using sessionStore: SessionStore) async {
+        if isAtSharedRoot {
+            await openRoot(using: sessionStore)
+            return
+        }
+
         guard !isAtRoot else {
             return
         }
@@ -114,6 +142,9 @@ final class StorageHomeViewModel: ObservableObject {
             await loadByFolderID(parentFolderID, using: sessionStore)
         } else {
             let targetPath = parentPath ?? "/"
+            if targetPath == "/" {
+                clearSharedBrowsingContext()
+            }
             await load(path: targetPath, starredHint: starredStateByPath[targetPath], using: sessionStore)
         }
     }
@@ -494,5 +525,10 @@ final class StorageHomeViewModel: ObservableObject {
     private func clearUploadProgress() {
         uploadProgressDismissToken = UUID()
         uploadProgress = nil
+    }
+
+    private func clearSharedBrowsingContext() {
+        sharedRootFolderID = nil
+        isBrowsingSharedResource = false
     }
 }

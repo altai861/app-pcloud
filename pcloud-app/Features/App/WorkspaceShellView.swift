@@ -62,6 +62,8 @@ struct WorkspaceShellView: View {
                 case .storage:
                     if skipNextStorageRefresh {
                         skipNextStorageRefresh = false
+                    } else if storageViewModel.isBrowsingSharedResource {
+                        await storageViewModel.openRoot(using: sessionStore)
                     } else {
                         await storageViewModel.refresh(using: sessionStore)
                     }
@@ -346,7 +348,7 @@ struct WorkspaceShellView: View {
         let strings = settingsStore.strings
 
         return Button {
-            selectedTab = tab
+            selectTab(tab)
             hideSidebar()
         } label: {
             HStack(spacing: 14) {
@@ -375,7 +377,7 @@ struct WorkspaceShellView: View {
         let isSelected = selectedTab == tab
 
         return Button {
-            selectedTab = tab
+            selectTab(tab)
         } label: {
             VStack(spacing: 6) {
                 Image(systemName: tab.systemImage)
@@ -420,6 +422,16 @@ struct WorkspaceShellView: View {
         }
     }
 
+    private func selectTab(_ tab: WorkspaceTab) {
+        if tab == .storage, selectedTab == .storage, storageViewModel.isBrowsingSharedResource {
+            Task {
+                await storageViewModel.openRoot(using: sessionStore)
+            }
+        }
+
+        selectedTab = tab
+    }
+
     private func openStarredFolder(_ entry: StorageEntry) {
         selectedTab = .storage
 
@@ -434,7 +446,7 @@ struct WorkspaceShellView: View {
 
     private func openSharedFolder(_ entry: SharedResourceEntry) {
         Task {
-            await storageViewModel.openFolder(id: entry.resourceId, using: sessionStore)
+            await storageViewModel.openSharedFolder(id: entry.resourceId, using: sessionStore)
             skipNextStorageRefresh = true
             selectedTab = .storage
         }
